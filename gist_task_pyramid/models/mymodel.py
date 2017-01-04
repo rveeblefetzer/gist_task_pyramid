@@ -10,9 +10,12 @@ from .meta import Base
 
 class MyModel(Base):
     __tablename__ = 'models'
-    id = Column(Integer, primary_key=True)
-    name = Column(Text)
+    username = Column(Text, primary_key=True)
+    password = Column(Text)
+    first_name = Column(Text)
+    last_name = Column(Text)
     food = Column(Text)
+    email = Column(Text)
 
 
-Index('my_index', MyModel.name, unique=True, mysql_length=255)
+Index('my_index', MyModel.username, unique=True, mysql_length=255)

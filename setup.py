@@ -50,6 +50,6 @@ setup(name='gist_task_pyramid',
       [paste.app_factory]
       main = gist_task_pyramid:main
       [console_scripts]
-      initialize_gist_task_pyramid_db = gist_task_pyramid.scripts.initializedb:main
+      initialize_db = gist_task_pyramid.scripts.initializedb:main
       """,
       )
